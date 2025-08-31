@@ -89,8 +89,13 @@ function renderCoaches(coachList) {
     grid.innerHTML = coachList.map(coach => `
         <div class="bg-fight-gray rounded-xl p-6 border border-fight-red hover:border-fight-yellow transition-all transform hover:scale-105">
             <div class="text-center mb-4">
-                <div class="w-24 h-24 bg-fight-red rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <i class="fas fa-user-ninja text-3xl text-white"></i>
+                <div class="w-24 h-24 mx-auto mb-4 overflow-hidden rounded-full border-3 border-fight-red">
+                    ${coach.profile_image_url 
+                        ? `<img src="${coach.profile_image_url}" alt="${coach.name}" class="w-full h-full object-cover">`
+                        : `<div class="w-full h-full bg-fight-red flex items-center justify-center">
+                             <i class="fas fa-user-ninja text-3xl text-white"></i>
+                           </div>`
+                    }
                 </div>
                 <h3 class="text-2xl font-bold text-fight-yellow">${coach.name}</h3>
                 <p class="text-fight-red font-semibold">${coach.experience_years} Years Experience</p>
@@ -141,8 +146,13 @@ function renderCoachSelection(coachList) {
         <div class="coach-option bg-black border border-fight-red rounded-lg p-4 cursor-pointer hover:border-fight-yellow transition-colors" 
              onclick="selectCoach(${coach.id})">
             <div class="flex items-center space-x-4">
-                <div class="w-16 h-16 bg-fight-red rounded-full flex items-center justify-center">
-                    <i class="fas fa-user-ninja text-xl text-white"></i>
+                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-fight-red">
+                    ${coach.profile_image_url 
+                        ? `<img src="${coach.profile_image_url}" alt="${coach.name}" class="w-full h-full object-cover">`
+                        : `<div class="w-full h-full bg-fight-red flex items-center justify-center">
+                             <i class="fas fa-user-ninja text-xl text-white"></i>
+                           </div>`
+                    }
                 </div>
                 <div>
                     <h4 class="text-fight-yellow font-bold text-lg">${coach.name}</h4>
