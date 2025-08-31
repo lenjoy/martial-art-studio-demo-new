@@ -4,19 +4,20 @@ A modern martial arts studio management and booking system built with **Bruce Le
 
 ## 🚀 Live Demo
 
-- **Production URL**: https://6ab2ab88.martial-arts-studio.pages.dev
+- **Production URL**: https://e8d02864.martial-arts-studio.pages.dev
 - **Alternative URL**: https://martial-arts-studio.pages.dev
-- **API Base URL**: https://6ab2ab88.martial-arts-studio.pages.dev/api
+- **API Base URL**: https://e8d02864.martial-arts-studio.pages.dev/api
 - **Development URL**: https://3000-i6j8a89cdu6n0k2d58aq0-6532622b.e2b.dev
 
 ## ✨ Currently Completed Features
 
 ### 🎯 Core User Features
-- ✅ **Coach Directory**: Browse coaches with filtering by martial arts style and language
+- ✅ **Coach Directory**: Browse coaches with professional headshot photos and filtering by martial arts style and language
 - ✅ **Real-time Availability**: View available time slots for each coach
 - ✅ **Booking System**: Complete 3-step booking process (Coach → Date/Time → Details)
 - ✅ **Student Dashboard**: Look up bookings by email with cancel functionality
 - ✅ **Responsive Design**: Modern MMA/Bruce Lee themed UI with mobile support
+- ✅ **Professional Photos**: AI-generated realistic headshots for all coaches
 
 ### 🔧 Admin Features
 - ✅ **Booking Management**: View all bookings with filtering by date/coach/status
@@ -143,12 +144,16 @@ A modern martial arts studio management and booking system built with **Bruce Le
    - View booking patterns and coach utilization
    - Export booking data (future feature)
 
-### 🥋 Sample Coaches Available
+### 🥋 Sample Coaches Available (with Professional Photos)
 
-- **Bruce Chen** - Kung Fu, Wing Chun, Kickboxing (15+ years)
+- **Bruce Chen** - Kung Fu, Wing Chun, Kickboxing (15+ years) 
+  *Asian martial arts master specializing in traditional forms and striking*
 - **Maria Rodriguez** - BJJ, Muay Thai, MMA (Former pro fighter)
+  *Latina former MMA professional with expertise in ground fighting and Muay Thai*
 - **Jake Thompson** - Boxing, Kickboxing (Golden Gloves champion)
+  *Caucasian boxing specialist and former Golden Gloves champion*
 - **Sensei Tanaka** - Karate, Judo, Aikido (Traditional master)
+  *Japanese martial arts master with 20+ years in traditional disciplines*
 
 ## 🛠️ Tech Stack
 
@@ -163,7 +168,7 @@ A modern martial arts studio management and booking system built with **Bruce Le
 
 - **Platform**: ✅ **DEPLOYED to Cloudflare Pages**
 - **Status**: 🟢 **LIVE in Production** - Fully operational
-- **Production URL**: https://6ab2ab88.martial-arts-studio.pages.dev
+- **Production URL**: https://e8d02864.martial-arts-studio.pages.dev
 - **Database**: ✅ Production D1 with sample data (martial-arts-demo-db)
 - **APIs**: ✅ All endpoints operational in production
 - **Frontend**: ✅ Complete booking flow working
@@ -217,14 +222,14 @@ npm run dev:sandbox
 ## 📞 API Testing Examples
 
 ```bash
-# Get all coaches (Production)
-curl https://6ab2ab88.martial-arts-studio.pages.dev/api/coaches
+# Get all coaches (Production) - includes profile photos
+curl https://e8d02864.martial-arts-studio.pages.dev/api/coaches
 
 # Check availability (Production)
-curl https://6ab2ab88.martial-arts-studio.pages.dev/api/coaches/1/availability/2025-09-01
+curl https://e8d02864.martial-arts-studio.pages.dev/api/coaches/1/availability/2025-09-01
 
 # Create booking (Production)
-curl -X POST https://6ab2ab88.martial-arts-studio.pages.dev/api/bookings \
+curl -X POST https://e8d02864.martial-arts-studio.pages.dev/api/bookings \
   -H "Content-Type: application/json" \
   -d '{
     "coach_id": 1,
