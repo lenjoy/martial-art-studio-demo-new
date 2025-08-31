@@ -191,8 +191,8 @@ A modern martial arts studio management and booking system built with **Bruce Le
 
 ```bash
 # Clone and setup
-git clone [repository-url]
-cd webapp
+git clone https://github.com/lenjoy/martial-art-studio-demo-new.git
+cd martial-art-studio-demo-new
 
 # Install dependencies
 npm install
