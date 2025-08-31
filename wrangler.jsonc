@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "webapp",
+  "name": "martial-arts-studio",
   "compatibility_date": "2025-08-31",
   "pages_build_output_dir": "./dist",
   "compatibility_flags": [
@@ -24,8 +24,8 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "webapp-production",
-      "database_id": "placeholder-will-be-updated-after-creation"
+      "database_name": "martial-arts-demo-db",
+      "database_id": "249460ee-dc7b-4ced-aef5-cb6b5f8e6c2f"
     }
   ],
   // "ai": {
