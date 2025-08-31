@@ -4,8 +4,10 @@ A modern martial arts studio management and booking system built with **Bruce Le
 
 ## 🚀 Live Demo
 
-- **Production URL**: https://3000-i6j8a89cdu6n0k2d58aq0-6532622b.e2b.dev
-- **API Base URL**: https://3000-i6j8a89cdu6n0k2d58aq0-6532622b.e2b.dev/api
+- **Production URL**: https://6ab2ab88.martial-arts-studio.pages.dev
+- **Alternative URL**: https://martial-arts-studio.pages.dev
+- **API Base URL**: https://6ab2ab88.martial-arts-studio.pages.dev/api
+- **Development URL**: https://3000-i6j8a89cdu6n0k2d58aq0-6532622b.e2b.dev
 
 ## ✨ Currently Completed Features
 
@@ -159,12 +161,14 @@ A modern martial arts studio management and booking system built with **Bruce Le
 
 ## 📅 Deployment Status
 
-- **Platform**: Cloudflare Pages (Ready for production deployment)
-- **Status**: ✅ **Development Active** - Fully functional in sandbox
-- **Database**: ✅ Local D1 with sample data loaded
-- **APIs**: ✅ All endpoints operational
+- **Platform**: ✅ **DEPLOYED to Cloudflare Pages**
+- **Status**: 🟢 **LIVE in Production** - Fully operational
+- **Production URL**: https://6ab2ab88.martial-arts-studio.pages.dev
+- **Database**: ✅ Production D1 with sample data (martial-arts-demo-db)
+- **APIs**: ✅ All endpoints operational in production
 - **Frontend**: ✅ Complete booking flow working
-- **Last Updated**: August 31, 2025
+- **GitHub**: ✅ Code repository available
+- **Last Deployed**: August 31, 2025
 
 ## 🔄 Features Not Yet Implemented
 
@@ -213,14 +217,14 @@ npm run dev:sandbox
 ## 📞 API Testing Examples
 
 ```bash
-# Get all coaches
-curl https://3000-i6j8a89cdu6n0k2d58aq0-6532622b.e2b.dev/api/coaches
+# Get all coaches (Production)
+curl https://6ab2ab88.martial-arts-studio.pages.dev/api/coaches
 
-# Check availability
-curl https://3000-i6j8a89cdu6n0k2d58aq0-6532622b.e2b.dev/api/coaches/1/availability/2025-09-01
+# Check availability (Production)
+curl https://6ab2ab88.martial-arts-studio.pages.dev/api/coaches/1/availability/2025-09-01
 
-# Create booking
-curl -X POST https://3000-i6j8a89cdu6n0k2d58aq0-6532622b.e2b.dev/api/bookings \
+# Create booking (Production)
+curl -X POST https://6ab2ab88.martial-arts-studio.pages.dev/api/bookings \
   -H "Content-Type: application/json" \
   -d '{
     "coach_id": 1,
